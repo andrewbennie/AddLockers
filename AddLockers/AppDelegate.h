@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+
+//#import SignInViewController from Paola's code
 
 @class ViewController;
 
