@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "LockerListViewController.h"
+//#import "PasswordItem.h" from Frank's code
 
 @interface ViewController ()
 
@@ -14,7 +16,13 @@
 
 @implementation ViewController
 
-#pragma mark - Setup
+//implement delegate
+//-(void)LockerListViewDelegate: (NSNotification*)notification
+//#pragma mark - Setup
+//set up delegate
+
+//{ViewController *LockerListViewDelegate = [[ViewController alloc] init];
+    
 
 /* helper method that keeps our barButtonItem creation seperate from our viewDidLoad (this is only done to keep viewDidLoad a little cleaner */
 - (void)addBarButtonItem
@@ -52,38 +60,48 @@
     self.password.delegate = self;
     self.url.delegate = self;
     
+    
     [self addBarButtonItem];
 }
 
 - (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+    {
+        [super didReceiveMemoryWarning];
+        // Dispose of any resources that can be recreated.
+    }
+
 
 #pragma mark - IBActions
 
 -(void)saveBarButtonItemPressed:(id)sender
+
+//make sure that all textfields have some information entered
+{if([self.userName.text isEqualToString:@""] || [self.accountTitle.text isEqualToString:@""] || [self.password.text isEqualToString:@""])
 {
-    if ([self.password.text isEqualToString:@""]){
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You must enter a password" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles: nil];
-        [alertView show];
-    }
-    else {
-        LockerAccount *account = [[LockerAccount alloc] init];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill in all required fields before continuing." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+    
+    LockerAccount *account = [[LockerAccount alloc] init];
         account.accountTitle = self.accountTitle.text;
         account.userName = self.userName.text;
         account.password = self.password.text;
         account.url = self.url.text;
-        //[self.delegate passwordAdded:account];
-        [self.navigationController popViewControllerAnimated:YES];
+          //Add delegate? LockerAccount.delegate = self;
+       // [self.navigationController popViewControllerAnimated:YES];
     }
-}
+
+//{
+//       self.account =[NSEntityDescription insertNewObjectForEntityForName:@"LockerAccount" inManagedObjectContext:self.managedObjectContext];
+//}
+
 #pragma mark - UITextFieldDelegate
 
 //implement the UITextField Protocol method that will be called every time the user presses the return key on the keyboard.
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
+
 {
     [self.accountTitle resignFirstResponder];
     [self.userName resignFirstResponder];
@@ -93,5 +111,5 @@
     return YES;
 }
 
-
 @end
+

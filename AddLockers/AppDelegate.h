@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
+@property (nonatomic, strong) UINavigationController *navController;
+
 @end

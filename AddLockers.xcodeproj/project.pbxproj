@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A76DDCA51779165C00094C11 /* LockerAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DDCA41779165C00094C11 /* LockerAccount.m */; };
+		A77832FE177A43EA006215FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A77832FD177A43EA006215FE /* AppDelegate.m */; };
+		A7783308177A5A78006215FE /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7783306177A5A78006215FE /* CreateAccountViewController.m */; };
+		A7783309177A5A78006215FE /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7783307177A5A78006215FE /* CreateAccountViewController.xib */; };
+		A778330E177A5B8C006215FE /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A778330C177A5B8C006215FE /* SignInViewController.m */; };
+		A778330F177A5B8C006215FE /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A778330D177A5B8C006215FE /* SignInViewController.xib */; };
+		A7783314177A5BFF006215FE /* LockerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7783312177A5BFF006215FE /* LockerHomeViewController.m */; };
+		A7783315177A5BFF006215FE /* LockerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7783313177A5BFF006215FE /* LockerHomeViewController.xib */; };
+		A778331A177A5C37006215FE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7783318177A5C37006215FE /* SettingsViewController.m */; };
+		A778331B177A5C37006215FE /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7783319177A5C37006215FE /* SettingsViewController.xib */; };
+		A7783320177B6E96006215FE /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A778331F177B6E96006215FE /* NewRelicAgent.framework */; };
 		A7948D9017738FFB005C3DC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7948D8F17738FFB005C3DC0 /* UIKit.framework */; };
 		A7948D9217738FFB005C3DC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7948D9117738FFB005C3DC0 /* Foundation.framework */; };
 		A7948D9417738FFB005C3DC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7948D9317738FFB005C3DC0 /* CoreGraphics.framework */; };
 		A7948D9A17738FFB005C3DC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7948D9817738FFB005C3DC0 /* InfoPlist.strings */; };
 		A7948D9C17738FFB005C3DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7948D9B17738FFB005C3DC0 /* main.m */; };
-		A7948DA017738FFB005C3DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7948D9F17738FFB005C3DC0 /* AppDelegate.m */; };
 		A7948DA217738FFC005C3DC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A7948DA117738FFC005C3DC0 /* Default.png */; };
 		A7948DA417738FFC005C3DC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7948DA317738FFC005C3DC0 /* Default@2x.png */; };
 		A7948DA617738FFC005C3DC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7948DA517738FFC005C3DC0 /* Default-568h@2x.png */; };
@@ -45,13 +55,40 @@
 		A7948E0717739613005C3DC0 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A7948DEA17739613005C3DC0 /* MagicalRecord+ShorthandSupport.m */; };
 		A7948E0817739613005C3DC0 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A7948DEC17739613005C3DC0 /* MagicalRecord.m */; };
 		A7948E0B1773A151005C3DC0 /* LockerAccount.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7948E091773A151005C3DC0 /* LockerAccount.xcdatamodeld */; };
-		A7948E0F1773A205005C3DC0 /* LockerAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A7948E0E1773A204005C3DC0 /* LockerAccount.m */; };
 		A7948E141773A5DD005C3DC0 /* LockerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7948E121773A5DD005C3DC0 /* LockerListViewController.m */; };
 		A7948E151773A5DD005C3DC0 /* LockerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7948E131773A5DD005C3DC0 /* LockerListViewController.xib */; };
 		A7948E181773BA12005C3DC0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7948E171773BA12005C3DC0 /* CoreData.framework */; };
+		A7ACFC92177A3737007D8F16 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC90177A3737007D8F16 /* KinveyKit.framework */; };
+		A7ACFC95177A3773007D8F16 /* libUAirship-1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC94177A3773007D8F16 /* libUAirship-1.4.0.a */; };
+		A7ACFC97177A37BC007D8F16 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC96177A37BC007D8F16 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A7ACFC99177A37CF007D8F16 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC98177A37CF007D8F16 /* CFNetwork.framework */; };
+		A7ACFC9B177A37D7007D8F16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC9A177A37D7007D8F16 /* CoreLocation.framework */; };
+		A7ACFC9D177A37DF007D8F16 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC9C177A37DF007D8F16 /* CoreTelephony.framework */; };
+		A7ACFC9F177A37EA007D8F16 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFC9E177A37EA007D8F16 /* libsqlite3.dylib */; };
+		A7ACFCA1177A37F3007D8F16 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFCA0177A37F3007D8F16 /* libz.dylib */; };
+		A7ACFCA3177A37FC007D8F16 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFCA2177A37FC007D8F16 /* MobileCoreServices.framework */; };
+		A7ACFCA5177A3805007D8F16 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFCA4177A3805007D8F16 /* Security.framework */; };
+		A7ACFCA7177A3814007D8F16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFCA6177A3814007D8F16 /* SystemConfiguration.framework */; };
+		A7ACFCA9177A3823007D8F16 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACFCA8177A3823007D8F16 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A76DDCA31779165C00094C11 /* LockerAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerAccount.h; sourceTree = "<group>"; };
+		A76DDCA41779165C00094C11 /* LockerAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerAccount.m; sourceTree = "<group>"; };
+		A77832FD177A43EA006215FE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7783305177A5A78006215FE /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		A7783306177A5A78006215FE /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		A7783307177A5A78006215FE /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		A778330B177A5B8C006215FE /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		A778330C177A5B8C006215FE /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		A778330D177A5B8C006215FE /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		A7783311177A5BFF006215FE /* LockerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerHomeViewController.h; sourceTree = "<group>"; };
+		A7783312177A5BFF006215FE /* LockerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerHomeViewController.m; sourceTree = "<group>"; };
+		A7783313177A5BFF006215FE /* LockerHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockerHomeViewController.xib; sourceTree = "<group>"; };
+		A7783317177A5C37006215FE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A7783318177A5C37006215FE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A7783319177A5C37006215FE /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		A778331F177B6E96006215FE /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewRelicAgent.framework; sourceTree = "<group>"; };
 		A7948D8C17738FFB005C3DC0 /* AddLockers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddLockers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7948D8F17738FFB005C3DC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A7948D9117738FFB005C3DC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,7 +98,6 @@
 		A7948D9B17738FFB005C3DC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7948D9D17738FFB005C3DC0 /* AddLockers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddLockers-Prefix.pch"; sourceTree = "<group>"; };
 		A7948D9E17738FFB005C3DC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A7948D9F17738FFB005C3DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A7948DA117738FFC005C3DC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A7948DA317738FFC005C3DC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A7948DA517738FFC005C3DC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -123,12 +159,22 @@
 		A7948DED17739613005C3DC0 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		A7948DEE17739613005C3DC0 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		A7948E0A1773A151005C3DC0 /* LockerAccount.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LockerAccount.xcdatamodel; sourceTree = "<group>"; };
-		A7948E0D1773A204005C3DC0 /* LockerAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerAccount.h; sourceTree = "<group>"; };
-		A7948E0E1773A204005C3DC0 /* LockerAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerAccount.m; sourceTree = "<group>"; };
 		A7948E111773A5DD005C3DC0 /* LockerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerListViewController.h; sourceTree = "<group>"; };
 		A7948E121773A5DD005C3DC0 /* LockerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerListViewController.m; sourceTree = "<group>"; };
 		A7948E131773A5DD005C3DC0 /* LockerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockerListViewController.xib; sourceTree = "<group>"; };
 		A7948E171773BA12005C3DC0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A7ACFC90177A3737007D8F16 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
+		A7ACFC94177A3773007D8F16 /* libUAirship-1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUAirship-1.4.0.a"; sourceTree = "<group>"; };
+		A7ACFC96177A37BC007D8F16 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A7ACFC98177A37CF007D8F16 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A7ACFC9A177A37D7007D8F16 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A7ACFC9C177A37DF007D8F16 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A7ACFC9E177A37EA007D8F16 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A7ACFCA0177A37F3007D8F16 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A7ACFCA2177A37FC007D8F16 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A7ACFCA4177A3805007D8F16 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A7ACFCA6177A3814007D8F16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A7ACFCA8177A3823007D8F16 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,21 +182,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7948E181773BA12005C3DC0 /* CoreData.framework in Frameworks */,
-				A7948D9017738FFB005C3DC0 /* UIKit.framework in Frameworks */,
+				A7ACFC9D177A37DF007D8F16 /* CoreTelephony.framework in Frameworks */,
 				A7948D9217738FFB005C3DC0 /* Foundation.framework in Frameworks */,
+				A7948D9017738FFB005C3DC0 /* UIKit.framework in Frameworks */,
 				A7948D9417738FFB005C3DC0 /* CoreGraphics.framework in Frameworks */,
+				A7948E181773BA12005C3DC0 /* CoreData.framework in Frameworks */,
+				A7ACFC92177A3737007D8F16 /* KinveyKit.framework in Frameworks */,
+				A7ACFC97177A37BC007D8F16 /* Accounts.framework in Frameworks */,
+				A7ACFCA9177A3823007D8F16 /* Twitter.framework in Frameworks */,
+				A7ACFCA7177A3814007D8F16 /* SystemConfiguration.framework in Frameworks */,
+				A7ACFCA5177A3805007D8F16 /* Security.framework in Frameworks */,
+				A7ACFCA3177A37FC007D8F16 /* MobileCoreServices.framework in Frameworks */,
+				A7ACFCA1177A37F3007D8F16 /* libz.dylib in Frameworks */,
+				A7ACFC9F177A37EA007D8F16 /* libsqlite3.dylib in Frameworks */,
+				A7ACFC9B177A37D7007D8F16 /* CoreLocation.framework in Frameworks */,
+				A7ACFC99177A37CF007D8F16 /* CFNetwork.framework in Frameworks */,
+				A7ACFC95177A3773007D8F16 /* libUAirship-1.4.0.a in Frameworks */,
+				A7783320177B6E96006215FE /* NewRelicAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A778330A177A5A7D006215FE /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A7783305177A5A78006215FE /* CreateAccountViewController.h */,
+				A7783306177A5A78006215FE /* CreateAccountViewController.m */,
+				A7783307177A5A78006215FE /* CreateAccountViewController.xib */,
+			);
+			name = CreateAccount;
+			sourceTree = "<group>";
+		};
+		A7783310177A5B93006215FE /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A778330B177A5B8C006215FE /* SignInViewController.h */,
+				A778330C177A5B8C006215FE /* SignInViewController.m */,
+				A778330D177A5B8C006215FE /* SignInViewController.xib */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		A7783316177A5C06006215FE /* LockerHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A7783311177A5BFF006215FE /* LockerHomeViewController.h */,
+				A7783312177A5BFF006215FE /* LockerHomeViewController.m */,
+				A7783313177A5BFF006215FE /* LockerHomeViewController.xib */,
+			);
+			name = LockerHomeView;
+			sourceTree = "<group>";
+		};
+		A778331C177A5C3B006215FE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A7783317177A5C37006215FE /* SettingsViewController.h */,
+				A7783318177A5C37006215FE /* SettingsViewController.m */,
+				A7783319177A5C37006215FE /* SettingsViewController.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		A7948D8317738FFB005C3DC0 = {
 			isa = PBXGroup;
 			children = (
 				A7948DB217739042005C3DC0 /* Initialization */,
+				A778330A177A5A7D006215FE /* CreateAccount */,
+				A7783310177A5B93006215FE /* SignIn */,
 				A7948D9517738FFB005C3DC0 /* AddLockers */,
+				A7948E161773A5E4005C3DC0 /* LockerListView */,
+				A778331C177A5C3B006215FE /* Settings */,
+				A7948E101773A209005C3DC0 /* Model */,
+				A7948D9617738FFB005C3DC0 /* Supporting Files */,
 				A7948DB317739613005C3DC0 /* MagicalRecord */,
 				A7948D8E17738FFB005C3DC0 /* Frameworks */,
 				A7948D8D17738FFB005C3DC0 /* Products */,
@@ -168,6 +273,19 @@
 		A7948D8E17738FFB005C3DC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A778331F177B6E96006215FE /* NewRelicAgent.framework */,
+				A7ACFCA0177A37F3007D8F16 /* libz.dylib */,
+				A7ACFC9E177A37EA007D8F16 /* libsqlite3.dylib */,
+				A7ACFCA8177A3823007D8F16 /* Twitter.framework */,
+				A7ACFCA6177A3814007D8F16 /* SystemConfiguration.framework */,
+				A7ACFCA4177A3805007D8F16 /* Security.framework */,
+				A7ACFCA2177A37FC007D8F16 /* MobileCoreServices.framework */,
+				A7ACFC9C177A37DF007D8F16 /* CoreTelephony.framework */,
+				A7ACFC9A177A37D7007D8F16 /* CoreLocation.framework */,
+				A7ACFC98177A37CF007D8F16 /* CFNetwork.framework */,
+				A7ACFC96177A37BC007D8F16 /* Accounts.framework */,
+				A7ACFC93177A3773007D8F16 /* Airship */,
+				A7ACFC90177A3737007D8F16 /* KinveyKit.framework */,
 				A7948E171773BA12005C3DC0 /* CoreData.framework */,
 				A7948D8F17738FFB005C3DC0 /* UIKit.framework */,
 				A7948D9117738FFB005C3DC0 /* Foundation.framework */,
@@ -182,9 +300,6 @@
 				A7948DA717738FFC005C3DC0 /* ViewController.h */,
 				A7948DA817738FFC005C3DC0 /* ViewController.m */,
 				A7948DAA17738FFC005C3DC0 /* ViewController.xib */,
-				A7948E161773A5E4005C3DC0 /* Locker List */,
-				A7948E101773A209005C3DC0 /* Model */,
-				A7948D9617738FFB005C3DC0 /* Supporting Files */,
 			);
 			path = AddLockers;
 			sourceTree = "<group>";
@@ -197,18 +312,19 @@
 				A7948D9B17738FFB005C3DC0 /* main.m */,
 				A7948D9D17738FFB005C3DC0 /* AddLockers-Prefix.pch */,
 				A7948DA117738FFC005C3DC0 /* Default.png */,
-				A7948E091773A151005C3DC0 /* LockerAccount.xcdatamodeld */,
 				A7948DA317738FFC005C3DC0 /* Default@2x.png */,
 				A7948DA517738FFC005C3DC0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = AddLockers;
 			sourceTree = "<group>";
 		};
 		A7948DB217739042005C3DC0 /* Initialization */ = {
 			isa = PBXGroup;
 			children = (
 				A7948D9E17738FFB005C3DC0 /* AppDelegate.h */,
-				A7948D9F17738FFB005C3DC0 /* AppDelegate.m */,
+				A77832FD177A43EA006215FE /* AppDelegate.m */,
+				A7783316177A5C06006215FE /* LockerHomeView */,
 			);
 			name = Initialization;
 			path = AddLockers;
@@ -319,20 +435,31 @@
 		A7948E101773A209005C3DC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7948E0D1773A204005C3DC0 /* LockerAccount.h */,
-				A7948E0E1773A204005C3DC0 /* LockerAccount.m */,
+				A76DDCA31779165C00094C11 /* LockerAccount.h */,
+				A76DDCA41779165C00094C11 /* LockerAccount.m */,
+				A7948E091773A151005C3DC0 /* LockerAccount.xcdatamodeld */,
 			);
 			name = Model;
+			path = AddLockers;
 			sourceTree = "<group>";
 		};
-		A7948E161773A5E4005C3DC0 /* Locker List */ = {
+		A7948E161773A5E4005C3DC0 /* LockerListView */ = {
 			isa = PBXGroup;
 			children = (
 				A7948E111773A5DD005C3DC0 /* LockerListViewController.h */,
 				A7948E121773A5DD005C3DC0 /* LockerListViewController.m */,
 				A7948E131773A5DD005C3DC0 /* LockerListViewController.xib */,
 			);
-			name = "Locker List";
+			name = LockerListView;
+			path = AddLockers;
+			sourceTree = "<group>";
+		};
+		A7ACFC93177A3773007D8F16 /* Airship */ = {
+			isa = PBXGroup;
+			children = (
+				A7ACFC94177A3773007D8F16 /* libUAirship-1.4.0.a */,
+			);
+			path = Airship;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +519,10 @@
 				A7948DA617738FFC005C3DC0 /* Default-568h@2x.png in Resources */,
 				A7948DAC17738FFC005C3DC0 /* ViewController.xib in Resources */,
 				A7948E151773A5DD005C3DC0 /* LockerListViewController.xib in Resources */,
+				A7783309177A5A78006215FE /* CreateAccountViewController.xib in Resources */,
+				A778330F177A5B8C006215FE /* SignInViewController.xib in Resources */,
+				A7783315177A5BFF006215FE /* LockerHomeViewController.xib in Resources */,
+				A778331B177A5C37006215FE /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +534,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7948D9C17738FFB005C3DC0 /* main.m in Sources */,
-				A7948DA017738FFB005C3DC0 /* AppDelegate.m in Sources */,
 				A7948DA917738FFC005C3DC0 /* ViewController.m in Sources */,
 				A7948DEF17739613005C3DC0 /* MagicalImportFunctions.m in Sources */,
 				A7948DF017739613005C3DC0 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -432,8 +562,13 @@
 				A7948E0717739613005C3DC0 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				A7948E0817739613005C3DC0 /* MagicalRecord.m in Sources */,
 				A7948E0B1773A151005C3DC0 /* LockerAccount.xcdatamodeld in Sources */,
-				A7948E0F1773A205005C3DC0 /* LockerAccount.m in Sources */,
 				A7948E141773A5DD005C3DC0 /* LockerListViewController.m in Sources */,
+				A76DDCA51779165C00094C11 /* LockerAccount.m in Sources */,
+				A77832FE177A43EA006215FE /* AppDelegate.m in Sources */,
+				A7783308177A5A78006215FE /* CreateAccountViewController.m in Sources */,
+				A778330E177A5B8C006215FE /* SignInViewController.m in Sources */,
+				A7783314177A5BFF006215FE /* LockerHomeViewController.m in Sources */,
+				A778331A177A5C37006215FE /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,9 +653,18 @@
 		A7948DB017738FFC005C3DC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AddLockers/AddLockers-Prefix.pch";
 				INFOPLIST_FILE = "AddLockers/AddLockers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Airship\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -529,9 +673,18 @@
 		A7948DB117738FFC005C3DC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AddLockers/AddLockers-Prefix.pch";
 				INFOPLIST_FILE = "AddLockers/AddLockers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Airship\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -556,6 +709,7 @@
 				A7948DB117738FFC005C3DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -10,22 +10,53 @@
 
 #import "ViewController.h"
 
+#import <NewRelicAgent/NewRelicAgent.h>
+
 @implementation AppDelegate
 
+@synthesize navController = _navController;
+
+//We add custom setup before our view loads.
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+
+{
+    [NewRelicAgent startWithApplicationToken:@"AA0adb94de7593a75fcb6fc4b8b4e398b1569d87ba"];
+}
+
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-   //set magical record sync with core data
+
+   //Set magical record sync with core data
     [MagicalRecord setupAutoMigratingCoreDataStack];
     // Override point for customization after application launch.
-    ViewController *addLockerViewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    /* Add a UINavigationController which creates a special viewcontroller that manages our view hierarchy*/
-    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:addLockerViewController];
+    UIViewController *addAccountVC = [[ViewController alloc] initWithNibName:nil bundle:nil];
+   // UIViewController *lockerVC = [[LockerListViewController alloc] initWithNibName:@"LockerListViewController" bundle: nil];
+   // UITableViewController *accountsVC = [[feedAccountsTable alloc] initWithNibName:@"feedAccountsTable" bundle:nil];
+   //QCPasswordItem *viewAccount = [[QCPasswordItem alloc] initWithNibName:nil bundle:nil];
+    // Add a UINavigationController which creates a special viewcontroller that manages our view hierarchy
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:addAccountVC];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+// Practice code: Override point for customization after application launch.
+//UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+//UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+//UITableViewController *viewController3 = [[ParkTable alloc] initWithNibName:@"ParkTable" bundle:nil];
+//UITableViewController *viewController4 = [[TableTest alloc] initWithNibName:@"TableTest" bundle:nil];
+//UINavigationController *navController1 = [[[UINavigationController alloc] initWithRootViewController:viewController4]];
+//
+//self.tabBarController = [[UITabBarController alloc] init];
+//self.ParkTableDel = [[UITableViewController alloc] init];
+//
+//self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, viewController4, nil];
+//self.window.rootViewController = self.tabBarController;
+//[self.window makeKeyAndVisible];
+//return YES;
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
