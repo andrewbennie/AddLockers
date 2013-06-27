@@ -43,7 +43,7 @@
     
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleBordered target:self action:@selector(saveBarButtonItemPressed:)];
     self.navigationItem.rightBarButtonItem = barButtonItem;
-    [self.generatePassword setTitle:@"Generate Random Password" forState:UIControlStateNormal];
+    [self.generatePassword setTitle:@"Random" forState:UIControlStateNormal];
 }
 -(NSString *)randomString:(NSInteger)length
 

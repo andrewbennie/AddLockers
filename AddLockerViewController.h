@@ -26,6 +26,7 @@
 
 //Hook up all views to header file
 
+@property (strong, nonatomic) IBOutlet UILabel *addPasswordLabel;
 
 @property (strong, nonatomic) IBOutlet UITextField *accountTitle;
 @property (strong, nonatomic) IBOutlet UITextField *userName;
