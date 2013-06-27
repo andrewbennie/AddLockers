@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "AddLockerViewController.h"
 #import "LockerAccount.h"
 @protocol LockerListViewControllerDelegate <NSObject>
 @end

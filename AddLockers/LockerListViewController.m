@@ -34,14 +34,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-  LockerListViewController *accountsArray = [[LockerListViewController alloc] initWithNib:@"accountsArray" bundle:nil];
-  LockerListViewController.textField= YES;
-   [self pushViewController:accountsArray animated:YES];
-    
-   {
-    NSMutableArray *accountsArray = [NSMutableArray arrayWithObjects:
-                                         accountTitle, userName, password, timeCreated, url, nil];
-    }
+//  LockerListViewController *accountsArray = [[LockerListViewController alloc] initWithNib:@"accountsArray" bundle:nil];
+//  LockerListViewController.textField= YES;
+//   [self pushViewController:accountsArray animated:YES];
+//    
+//   {
+//    NSMutableArray *accountsArray = [NSMutableArray arrayWithObjects:
+//                                         accountTitle, userName, password, timeCreated, url, nil];
+//    }
     
     [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
 }

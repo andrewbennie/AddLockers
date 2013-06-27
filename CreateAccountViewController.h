@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateAccountViewController : UIViewController
+//CreateAccountViewController conforms to the UITextFieldDelegate
+
+@interface CreateAccountViewController : UIViewController <UITextFieldDelegate>
+
+//hook up view objects to our header file
+
+@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
+
 
 @end
+
+
