@@ -58,9 +58,9 @@
 
 -(void)saveBarButtonItemPressed:(id)sender
 {
-    /* when the save BarButtonItem is pressed evaluate this method*/
+    // when the save BarButtonItem is pressed evaluate this method
     
-    /* if statement (if the two passwords are the same save our password to NSUserDefaults which will persist (save) our password and email between sessions. */
+    // if statement (if the two passwords are the same save our password to NSUserDefaults which will persist (save) our password and email between sessions.
     if ([self.passwordTextField.text isEqualToString:self.confirmPasswordTextField.text]){
         NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
         [standardUserDefaults setObject:self.emailTextField.text forKey:@"email"];

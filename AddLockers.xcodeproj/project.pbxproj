@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A76DDCA51779165C00094C11 /* LockerAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DDCA41779165C00094C11 /* LockerAccount.m */; };
+		A72DC81E1782344B00D84315 /* LockerAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DC81D1782344B00D84315 /* LockerAccount.m */; };
+		A72DC8211782344C00D84315 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DC8201782344C00D84315 /* Categories.m */; };
 		A77832FE177A43EA006215FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A77832FD177A43EA006215FE /* AppDelegate.m */; };
 		A7783308177A5A78006215FE /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7783306177A5A78006215FE /* CreateAccountViewController.m */; };
 		A7783309177A5A78006215FE /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7783307177A5A78006215FE /* CreateAccountViewController.xib */; };
@@ -77,8 +78,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A76DDCA31779165C00094C11 /* LockerAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerAccount.h; sourceTree = "<group>"; };
-		A76DDCA41779165C00094C11 /* LockerAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerAccount.m; sourceTree = "<group>"; };
+		A72DC81C1782344B00D84315 /* LockerAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerAccount.h; sourceTree = "<group>"; };
+		A72DC81D1782344B00D84315 /* LockerAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerAccount.m; sourceTree = "<group>"; };
+		A72DC81F1782344C00D84315 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		A72DC8201782344C00D84315 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
 		A77832FD177A43EA006215FE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A7783305177A5A78006215FE /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
 		A7783306177A5A78006215FE /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
@@ -256,14 +259,14 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		A7783339177BD3D8006215FE /* PassswordFeed */ = {
+		A7783339177BD3D8006215FE /* PasswordFeed */ = {
 			isa = PBXGroup;
 			children = (
 				A7783334177BD3D0006215FE /* PasswordFeedViewController.h */,
 				A7783335177BD3D0006215FE /* PasswordFeedViewController.m */,
 				A7783336177BD3D0006215FE /* PasswordFeedViewController.xib */,
 			);
-			name = PassswordFeed;
+			name = PasswordFeed;
 			sourceTree = "<group>";
 		};
 		A778333F177BD8CC006215FE /* AddLocker */ = {
@@ -293,7 +296,7 @@
 				A7948DB217739042005C3DC0 /* Initialization */,
 				A778330A177A5A7D006215FE /* CreateAccount */,
 				A7783310177A5B93006215FE /* SignIn */,
-				A7783339177BD3D8006215FE /* PassswordFeed */,
+				A7783339177BD3D8006215FE /* PasswordFeed */,
 				A778333F177BD8CC006215FE /* AddLocker */,
 				A7948E161773A5E4005C3DC0 /* LockerListView */,
 				A7783345177BE372006215FE /* EditLocker */,
@@ -367,9 +370,11 @@
 		A7948E101773A209005C3DC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A76DDCA31779165C00094C11 /* LockerAccount.h */,
-				A76DDCA41779165C00094C11 /* LockerAccount.m */,
 				A7948E091773A151005C3DC0 /* LockerAccount.xcdatamodeld */,
+				A72DC81F1782344C00D84315 /* Categories.h */,
+				A72DC8201782344C00D84315 /* Categories.m */,
+				A72DC81C1782344B00D84315 /* LockerAccount.h */,
+				A72DC81D1782344B00D84315 /* LockerAccount.m */,
 			);
 			name = Model;
 			path = AddLockers;
@@ -571,7 +576,6 @@
 				A7948D9C17738FFB005C3DC0 /* main.m in Sources */,
 				A7948E0B1773A151005C3DC0 /* LockerAccount.xcdatamodeld in Sources */,
 				A7948E141773A5DD005C3DC0 /* LockerListViewController.m in Sources */,
-				A76DDCA51779165C00094C11 /* LockerAccount.m in Sources */,
 				A77832FE177A43EA006215FE /* AppDelegate.m in Sources */,
 				A7783308177A5A78006215FE /* CreateAccountViewController.m in Sources */,
 				A778330E177A5B8C006215FE /* SignInViewController.m in Sources */,
@@ -606,6 +610,8 @@
 				A794A69D177BEC8800D4F5DB /* MagicalRecord+Setup.m in Sources */,
 				A794A69E177BEC8800D4F5DB /* MagicalRecord+ShorthandSupport.m in Sources */,
 				A794A69F177BEC8800D4F5DB /* MagicalRecord.m in Sources */,
+				A72DC81E1782344B00D84315 /* LockerAccount.m in Sources */,
+				A72DC8211782344C00D84315 /* Categories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

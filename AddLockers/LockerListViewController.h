@@ -12,24 +12,21 @@
 @protocol LockerListViewControllerDelegate <NSObject>
 @end
 
+// UITableView has 2 protocols: UITableViewDelegate & UITableViewDataSource.  We also created our own protocol located in the LockerListViewController.h file
 
-@interface LockerListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface LockerListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, LockerListViewControllerDelegate>
 
 //IBOutlet to View object
-@property (nonatomic, retain) IBOutlet UITableView *feedAccountsTable;
+@property (strong, nonatomic) IBOutlet UITableView *listTableView;
 
 @property(nonatomic) BOOL *textField;
 
 @property (weak) id <LockerListViewControllerDelegate> delegate;
 
-//Check code: @property (nonatomic, retain) NSManagedObjectContext;
+//Add Property for NSManagedObject? @property (nonatomic, retain) NSManagedObjectContext;
 
 //An array that we will populate with all account objects saved to core data.
 @property (strong, nonatomic) NSMutableArray *accountsArray;
 
 @end
-
-
-
-
 

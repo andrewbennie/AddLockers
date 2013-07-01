@@ -32,24 +32,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+  
     // Do any additional setup after loading the view from its nib.
     
-//  LockerListViewController *accountsArray = [[LockerListViewController alloc] initWithNib:@"accountsArray" bundle:nil];
-//  LockerListViewController.textField= YES;
-//   [self pushViewController:accountsArray animated:YES];
-//    
+// LockerListViewController *lockerListViewController = [[LockerListViewController alloc] initWithNib:@"lockerListViewController" bundle:nil];
+//   LockerListViewController.UITableViewCellStateShowingEditControlMask= YES;
+//   [self pushViewController:lockerListViewController animated:YES];
+// 
 //   {
-//    NSMutableArray *accountsArray = [NSMutableArray arrayWithObjects:
-//                                         accountTitle, userName, password, timeCreated, url, nil];
-//    }
-    
-    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
-}
+//    NSMutableArray *accountsArray = [NSMutableArray arrayWithObjects: accountTitle.text, userName, password, timeCreated, url, nil];
+//}
+//    
+//    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
+//}
 
 - (void)didReceiveMemoryWarning
+
+#pragma mark - UITableViewDataSource
 {
+    - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+    {
+        return 1;
+    }
+    
+    //numberOfRowsInsections, change the return value to declare how many rows are in our section
+    - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+    {
+        return self.lockers.count;
+    }
+    
+    //setup the tableView's cells.
+    -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    // Dispose of any resources that can be recreated
 
 @end

@@ -62,7 +62,15 @@
     return randomString;
     
 }
-
+//set up account object
+{
+    LockerAccount *account = [[LockerAccount alloc] init];
+    account.accountTitle = self.accountTitle.text;
+    account.userName = self.userName.text;
+    account.password = self.password.text;
+    account.url = self.url.text;
+    [self.delegate lockerAdded:account];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -78,15 +86,19 @@
         [alertView show];
     }
     else {
-        LockerAccount *account = [[LockerAccount alloc] init];
-        account.accountTitle = self.accountTitle.text;
-        account.userName = self.userName.text;
-        account.password = self.password.text;
-        account.url = self.url.text;
-        [self.delegate lockerAdded:account];
+        if ([self.password.text isEqualToString:self.password.text]){
+            NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+            [standardUserDefaults setObject:self.accountTitle.text forKey:@"account title"];
+            [standardUserDefaults setObject:self.userName.text forKey:@"username"];
+            [standardUserDefaults setObject:self.password.text forKey:@"password"];
+            [standardUserDefaults setObject:self.url.text forKey:@"url"];
+            [standardUserDefaults synchronize];
+        
         [self.navigationController popViewControllerAnimated:YES];
+        
     }
-}
+    }
+
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -98,5 +110,25 @@
 }
 
 - (IBAction)generatePasswordPressed:(id)sender {
+    self.password.text = [self randomString:8];
 }
+//If the save button is pressed take the user to the LockerListView page.
+    
+- (IBAction)savePressed:(UIButton *)sender {
+    
+    LockerListViewController *lockerListViewController = [[LockerListViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:lockerListViewController animated:YES];
+}
+
+
+#pragma mark - TextFieldDelegate
+
+//implement the textField Delegate method
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.enterPasswordTextField resignFirstResponder];
+    return YES;
+}
+
+- (IBAction)enterPasswordTextField:(id)sender 
+
 @end
